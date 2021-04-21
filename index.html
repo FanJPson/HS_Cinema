@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HS影院 - your best cinema！</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+</head>
+<body>
+<div class="container-fluid">
+<!--导航栏-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top mybg">
+        <a class="navbar-brand" href="#"><b style="font-size: 25px">HS 影院</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="webs/about_us.html">关于我们 <i class="fa fa-hand-o-left"></i></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-home"></i> 首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webs/film.html"><i class="fa fa-film"></i> 电影</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-tv"></i> 电视剧</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-heart-o"></i> 动漫</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-smile-o"></i> 综艺</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!--视频背景-->
+    <video id="videoBG" poster="image/ndmz-bg.jpg" autoplay muted loop>
+        <source src="video/ndmz.mp4" type="video/mp4">
+    </video>
+
+<!--欢迎语-->
+    <div class="nav text-light flex-column justify-content-center text-center" id="textbox">
+        <p><b>Hello!Welcome</b></p>
+        <a href="webs/film.html">
+            <button class="align-self-center" id="btn-go" type="button"><b>立即进入!</b></button>
+        </a>
+        <p id="title">用匠心去探索影视！</p>
+    </div>
+
+
+<!--脚部-->
+    <div class="fixed-bottom text-center" id="foot">
+        <p class="font-weight-normal">HS 影院 ©2021 || Power By Bootstrap
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+                <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+                <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+            </svg>
+            &Font Awesome
+            <i class="fa fa-fa"></i>
+        </p>
+    </div>
+</div>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
